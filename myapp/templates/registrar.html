@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333; /* Fondo oscuro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo para la sección de registro */
+        #registrarse {
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Estilo para el título */
+        #registrarse h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #FFA500; /* Naranja */
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para el contenedor del formulario */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo para las etiquetas de los campos */
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333333; /* Color oscuro para las etiquetas */
+        }
+
+        /* Estilo para los campos de entrada */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        /* Estilo para los campos al hacer foco */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #FFA500; /* Naranja al hacer foco */
+            outline: none;
+        }
+
+        /* Estilo para el botón de registro */
+        button {
+            padding: 12px;
+            background-color: #111111; /* Negro */
+            color: #FFA500; /* Naranja */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo para el botón al pasar el cursor */
+        button:hover {
+            background-color: #333333; /* Gris oscuro */
+            color: white;
+        }
+
+        /* Estilo para dispositivos móviles */
+        @media (max-width: 768px) {
+            #registrarse {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="registrarse">
+        <h1>Registrarse</h1>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <label for="new-username">Usuario:</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Elige un usuario" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                
+                <label for="new-password">Contraseña:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Crea una contraseña" required>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
